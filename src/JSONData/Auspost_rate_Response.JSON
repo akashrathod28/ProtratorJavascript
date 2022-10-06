@@ -1,0 +1,70 @@
+{
+	"shipments": [
+		{
+			"from": {
+				"type": "MERCHANT_LOCATION",
+				"lines": [
+					"111 Bourke St"
+				],
+				"suburb": "Melbourne",
+				"postcode": "3000",
+				"state": "VIC",
+				"name": "MARK TWAIN",
+				"business_name": "MARK TWAIN",
+				"country": "AU",
+				"email": "mark.twain@abc.com",
+				"phone": "+61 (3) 7010 4321"
+			},
+			"to": {
+				"type": "STANDARD_ADDRESS",
+				"lines": [
+					"PO Box 123"
+				],
+				"suburb": "Rye",
+				"postcode": "3941",
+				"state": "VIC",
+				"name": "PETER PARKER",
+				"business_name": "GLORA's COMP",
+				"country": "AU",
+				"email": "peter.parker@abc.com",
+				"phone": "4567890123"
+			},
+			"items": [
+				{
+					"weight": 21.0,
+					"height": 5.0,
+					"length": 6.0,
+					"width": 2.5,
+					"features": {
+						"TRANSIT_COVER": {
+							"type": "TRANSIT_COVER",
+							"attributes": {
+								"cover_amount": 200
+							},
+							"price": {
+								"calculated_gst": 0.0,
+								"calculated_price": 3.0,
+								"calculated_price_ex_gst": 3.0
+							},
+							"bundled": false
+						}
+					},
+					"product_id": "7E55"
+				}
+			],
+			"options": {},
+			"features": {},
+			"shipment_summary": {
+				"total_cost": 70.74,
+				"total_cost_ex_gst": 70.74,
+				"shipping_cost": 69.22,
+				"fuel_surcharge": 1.52,
+				"total_gst": 0.0,
+				"tracking_summary": {},
+				"number_of_items": 1
+			},
+			"movement_type": "DESPATCH",
+			"charge_to_account": "2012177639"
+		}
+	]
+}

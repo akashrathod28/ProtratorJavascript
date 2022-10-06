@@ -1,2 +1,1 @@
-# ProtratorJavascript
-test project by using protractor JavaScript jasmine framework
+Repository: com-ui-automation Content Coming Soon.

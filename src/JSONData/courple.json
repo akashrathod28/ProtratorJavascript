@@ -1,0 +1,6602 @@
+[
+	{
+		"serviceId": "L11",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "Y35",
+		"brandedName": "5Kg Satchel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 5000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 56,
+							"width": 56,
+							"height": 56
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "Y5A",
+		"brandedName": "5Kg Satchel ATL",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "Y33",
+		"brandedName": "3Kg Satchel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 3000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 42,
+							"width": 42,
+							"height": 42
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "Y3A",
+		"brandedName": "3Kg Satchel ATL",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "Y31",
+		"brandedName": "1Kg Satchel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 1000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 35,
+							"width": 35,
+							"height": 35
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "Y1A",
+		"brandedName": "1Kg Satchel ATL",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "Y30",
+		"brandedName": "500Gram Satchel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "Y0A",
+		"brandedName": "500Gram Satchel ATL",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "I77",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "I66",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "I55",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "I44",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "I33",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "I00",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "L77",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "L66",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "L55",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "L44",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "L33",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "L22",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "BUK",
+		"brandedName": "Road Express Bulk",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "NPU",
+		"brandedName": "Road Express No Pick Up",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "49L",
+		"brandedName": "Road Express",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "X35",
+		"brandedName": "5Kg Satchel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 5000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 56,
+							"width": 56,
+							"height": 56
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "X33",
+		"brandedName": "3Kg Satchel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 3000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 42,
+							"width": 42,
+							"height": 42
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "X31",
+		"brandedName": "1Kg Satchel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 1000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 35,
+							"width": 35,
+							"height": 35
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "X30",
+		"brandedName": "500Gram Satchel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 500
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 35,
+							"width": 35,
+							"height": 35
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "Y30",
+		"brandedName": "500Gram Satchel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 500
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 35,
+							"width": 35,
+							"height": 35
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P25",
+		"brandedName": "25Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 25000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P10",
+		"brandedName": "10Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P5",
+		"brandedName": "5Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 5000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P3",
+		"brandedName": "3Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 3000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P2",
+		"brandedName": "2Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 2000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P1",
+		"brandedName": "1Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 1000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P0",
+		"brandedName": "500Gram Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 500
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PX5",
+		"brandedName": "5Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 5000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PX3",
+		"brandedName": "3Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 3000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PX1",
+		"brandedName": "1Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 1000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PX0",
+		"brandedName": "500Gram Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 500
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PC25",
+		"brandedName": "25Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 25000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PC10",
+		"brandedName": "10Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 10000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PC5",
+		"brandedName": "5Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 5000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PC3",
+		"brandedName": "3Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 3000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PC2",
+		"brandedName": "2Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 2000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PC1",
+		"brandedName": "1Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 1000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "PC0",
+		"brandedName": "500Gram Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 500
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P5",
+		"brandedName": "5Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 5000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P3",
+		"brandedName": "3Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 3000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P1",
+		"brandedName": "1Kg Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 1000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "P0",
+		"brandedName": "500Gram Parcel",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 500
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "BU5",
+		"brandedName": "5Kg Parcel Bulk",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 5000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "BU3",
+		"brandedName": "3Kg Parcel Bulk",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 3000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "BU1",
+		"brandedName": "2Kg Parcel Bulk",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 2000
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	},
+	{
+		"serviceId": "BU0",
+		"brandedName": "500Gram Parcel Bulk",
+		"parcelTypeRules": [
+			{
+				"parcelType": "PKG",
+				"brandedName": "PKG",
+				"rateTypeId": "COMMERCIAL",
+				"rateTypeBrandedName": "Commercial",
+				"trackable": "TRACKABLE",
+				"specialServiceRules": [
+					{
+						"specialServiceId": "pickup",
+						"brandedName": "Collection",
+						"categoryId": "pickup",
+						"categoryName": "Collection",
+						"inputParameterRules": [
+							{
+								"name": "PICKUP_DATE",
+								"brandedName": "Pickup Date",
+								"required": true,
+								"format": "YYYY-MM-DD"
+							},
+							{
+								"name": "PICKUP_TIME",
+								"brandedName": "Pickup Time",
+								"required": true,
+								"format": "hh:mm tt",
+								"validValues": [
+									"06:00 AM",
+									"06:15 AM",
+									"06:30 AM",
+									"06:45 AM",
+									"07:00 AM",
+									"07:15 AM",
+									"07:30 AM",
+									"07:45 AM",
+									"08:00 AM",
+									"08:15 AM",
+									"08:30 AM",
+									"08:45 AM",
+									"09:00 AM",
+									"09:15 AM",
+									"09:30 AM",
+									"09:45 AM",
+									"10:00 AM",
+									"10:15 AM",
+									"10:30 AM",
+									"10:45 AM",
+									"11:00 AM",
+									"11:15 AM",
+									"11:30 AM",
+									"11:45 AM",
+									"12:00 PM",
+									"12:15 PM",
+									"12:30 PM",
+									"12:45 PM",
+									"01:00 PM",
+									"01:15 PM",
+									"01:30 PM",
+									"01:45 PM",
+									"02:00 PM",
+									"02:15 PM",
+									"02:30 PM",
+									"02:45 PM",
+									"03:00 PM",
+									"03:15 PM",
+									"03:30 PM",
+									"03:45 PM"
+								]
+							}
+						]
+					},
+					{
+						"specialServiceId": "Ins",
+						"brandedName": "Additional Compensation",
+						"categoryId": "INS",
+						"categoryName": "Declared Value",
+						"inputParameterRules": [
+							{
+								"name": "INPUT_VALUE",
+								"brandedName": "Additional Compensation Amount",
+								"required": true,
+								"minValue": 1,
+								"maxValue": 3000,
+								"freeValue": 1000
+							}
+						]
+					}
+				],
+				"weightRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "GM",
+						"minWeight": 10,
+						"maxWeight": 500
+					}
+				],
+				"dimensionRules": [
+					{
+						"required": true,
+						"unitOfMeasurement": "CM",
+						"minParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 1,
+							"width": 1,
+							"height": 1
+						},
+						"maxParcelDimensions": {
+							"unitOfMeasurement": "CM",
+							"length": 180,
+							"width": 180,
+							"height": 180
+						},
+						"maxLengthWidthHeightProduct": 40000
+					}
+				]
+			}
+		]
+	}
+]

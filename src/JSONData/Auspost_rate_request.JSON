@@ -1,0 +1,105 @@
+
+{
+    "shipments": [
+        {
+            "authorisation_number": "$.shipments_0_authorisation_number",
+            "consolidate": "$.shipments_0_consolidate",
+            "email_tracking_enabled": "$.shipments_0_email_tracking_enabled",
+            "features": {
+                "DELIVERY_DATE": {
+                    "attributes": {
+                        "date": "$.shipments_0_features_delivery_date_attributes_date"
+                    }
+                },
+                "DELIVERY_TIMES": {
+                    "attributes": {
+                        "windows": [
+                            {
+                                "end": "$.shipments_0_features_delivery_times_attributes_windows_0_end",
+                                "start": "$.shipments_0_features_delivery_times_attributes_windows_0_start"
+                            }
+                        ]
+                    }
+                },
+                "IDENTITY_ON_DELIVERY": {
+                    "attributes": {
+                        "id_capture_type": "$.shipments_0_features_identity_on_delivery_attributes_id_capture_type",
+                        "redirection_enabled": "$.shipments_0_features_identity_on_delivery_attributes_redirection_enabled"
+                    }
+                },
+                "PICKUP_DATE": {
+                    "attributes": {
+                        "date": "$.shipments_0_features_pickup_date_attributes_date"
+                    }
+                },
+                "PICKUP_TIME": {
+                    "attributes": {
+                        "time": "$.shipments_0_features_pickup_time_attributes_time"
+                    }
+                },
+                "PRINT_AT_DEPOT": {
+                    "attributes": {
+                        "enabled": "$.shipments_0_features_print_at_depot_attributes_enabled"
+                    }
+                },
+                "TRANSIT_WARRANTY": {
+                    "attributes": {
+                        "cover_amount": "$.shipments_0_features_transit_warranty_attributes_cover_amount"
+                    }
+                }
+            },
+            "from": {
+                "business_name": "$.shipments_0_from_business_name",
+                "country": "$.shipments_0_from_country",
+                "email": "$.shipments_0_from_email",
+                "lines": "$.shipments_0_from_lines",
+                "name": "$.shipments_0_from_name",
+                "phone": "$.shipments_0_from_phone",
+                "postcode": "$.shipments_0_from_postcode",
+                "state": "$.shipments_0_from_state",
+                "suburb": "$.shipments_0_from_suburb"
+            },
+            "goods_descriptions": "$.shipments_0_goods_descriptions",
+            "items": [
+                {
+                    "authority_to_leave": "$.shipments_0_items_0_authority_to_leave",
+                    "features": {
+                        "TRANSIT_COVER": {
+                            "attributes": {
+                                "cover_amount": "$.shipments_0_items_0_features_transit_cover_attributes_cover_amount"
+                            }
+                        }
+                    },
+                    "height": "$.shipments_0_items_0_height",
+                    "length": "$.shipments_0_items_0_length",
+                    "packaging_type": "$.shipments_0_items_0_packaging_type",
+                    "product_id": "$.shipments_0_items_0_product_id",
+                    "reason_for_return": "$.shipments_0_items_0_reason_for_return",
+                    "safe_drop_enabled": "$.shipments_0_items_0_safe_drop_enabled",
+                    "weight": "$.shipments_0_items_0_weight",
+                    "width": "$.shipments_0_items_0_width"
+                }
+            ],
+            "movement_type": "$.shipments_0_movement_type",
+            "sender_references": "$.shipments_0_sender_references",
+            "shipment_reference": "$.shipments_0_shipment_reference",
+            "to": {
+                "business_name": "$.shipments_0_to_business_name",
+                "country": "$.shipments_0_to_country",
+                "delivery_instructions": [
+                    "$.shipments_0_to_delivery_instructions_0",
+                    "$.shipments_0_to_delivery_instructions_1",
+                    "$.shipments_0_to_delivery_instructions_2"
+                ],
+                "email": "$.shipments_0_to_email",
+                "lines": "$.shipments_0_to_lines",
+                "name": "$.shipments_0_to_name",
+                "phone": "$.shipments_0_to_phone",
+                "postcode": "$.shipments_0_to_postcode",
+                "state": "$.shipments_0_to_state",
+                "suburb": "$.shipments_0_to_suburb",
+                "type": "$.shipments_0_to_type"
+            }
+        }
+    ]
+}
